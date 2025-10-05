@@ -59,13 +59,13 @@ export const ImageUploader: React.FC<ImageUploaderProps> = ({ onFileSelect, disa
         relative block w-full aspect-square border-2 border-dashed rounded-lg
         flex flex-col items-center justify-center text-center p-4
         cursor-pointer transition-colors duration-200
-        ${disabled ? 'cursor-not-allowed bg-slate-100' : 'bg-white hover:border-brand-primary'}
-        ${isDragging ? 'border-brand-primary bg-brand-light' : 'border-slate-300'}
+        ${disabled ? 'cursor-not-allowed bg-slate-800' : 'bg-slate-700/50 hover:border-brand-secondary'}
+        ${isDragging ? 'border-brand-secondary bg-brand-secondary/20' : 'border-slate-600'}
       `}>
         {preview ? (
           <img src={preview} alt="Image preview" className="max-h-full max-w-full object-contain rounded-md" />
         ) : (
-          <div className={`flex flex-col items-center gap-2 text-slate-500 ${isDragging ? 'text-brand-dark' : ''}`}>
+          <div className={`flex flex-col items-center gap-2 text-slate-400 ${isDragging ? 'text-brand-light' : ''}`}>
             <UploadIcon className={`h-8 w-8 transition-transform duration-300 ${isDragging ? 'animate-bounce-sm' : ''}`} />
             <span className="text-sm font-semibold">Drop image here</span>
             <span className="text-xs">or click to browse</span>

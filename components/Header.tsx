@@ -24,8 +24,8 @@ const NavLink: React.FC<{
       onClick={() => navigate(target)}
       className={`flex items-center gap-2 px-4 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${
         isActive
-          ? 'bg-brand-light text-brand-dark'
-          : 'text-slate-500 hover:bg-slate-100 hover:text-slate-700'
+          ? 'bg-brand-secondary/20 text-brand-light'
+          : 'text-slate-400 hover:bg-slate-700 hover:text-slate-200'
       }`}
       aria-current={isActive ? 'page' : undefined}
     >
@@ -38,7 +38,7 @@ const NavLink: React.FC<{
 
 export const Header: React.FC<HeaderProps> = ({ currentPage, navigate }) => {
   return (
-    <header className="bg-white/80 backdrop-blur-lg shadow-sm sticky top-0 z-10">
+    <header className="bg-slate-900/80 backdrop-blur-lg shadow-sm sticky top-0 z-10 border-b border-slate-700/50">
       <div className="container mx-auto px-4 md:px-6 py-3 flex items-center justify-between">
         <div 
           className="flex items-center gap-3 cursor-pointer group"
@@ -53,7 +53,7 @@ export const Header: React.FC<HeaderProps> = ({ currentPage, navigate }) => {
              </svg>
           </div>
           <div>
-            <h1 className="text-xl font-bold text-brand-dark tracking-tight">PocketDoc</h1>
+            <h1 className="text-xl font-bold text-slate-100 tracking-tight">PocketDoc</h1>
           </div>
         </div>
         <nav className="hidden md:flex items-center gap-2">

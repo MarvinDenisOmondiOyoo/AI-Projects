@@ -58,24 +58,24 @@ export const ImageAnalysisPage: React.FC = () => {
   return (
     <main className="flex-grow container mx-auto p-4 md:p-6 lg:p-8 animate-fade-in">
        <div className="text-center mb-8">
-          <h1 className="text-3xl md:text-4xl font-bold text-brand-dark">Radiology Image Analysis</h1>
-          <p className="mt-2 text-lg text-slate-600 max-w-2xl mx-auto">Upload a radiological image and ask a question to get an AI-powered analysis.</p>
+          <h1 className="text-3xl md:text-4xl font-bold text-slate-100">Radiology Image Analysis</h1>
+          <p className="mt-2 text-lg text-slate-300 max-w-2xl mx-auto">Upload a radiological image and ask a question to get an AI-powered analysis.</p>
       </div>
       <div className="flex flex-col lg:flex-row gap-8">
         <aside className="w-full lg:w-1/3 xl:w-1/4 animate-slide-in-up">
-            <div className="bg-white p-6 rounded-xl shadow-lg h-full flex flex-col gap-6">
+            <div className="bg-slate-800/70 backdrop-blur-md p-6 rounded-xl shadow-lg border border-slate-700 h-full flex flex-col gap-6">
                 <div>
-                    <h2 className="text-lg font-semibold text-slate-700 mb-2">1. Upload Image</h2>
+                    <h2 className="text-lg font-semibold text-slate-200 mb-2">1. Upload Image</h2>
                     <ImageUploader onFileSelect={setImageFile} disabled={isLoading} />
                 </div>
                  <div>
-                    <h2 className="text-lg font-semibold text-slate-700 mb-2">2. Input Query</h2>
-                    <p className="text-sm text-slate-500 mb-4">Ask a question about the uploaded image.</p>
+                    <h2 className="text-lg font-semibold text-slate-200 mb-2">2. Input Query</h2>
+                    <p className="text-sm text-slate-400 mb-4">Ask a question about the uploaded image.</p>
                     <textarea
                         value={query}
                         onChange={(e) => setQuery(e.target.value)}
                         placeholder="e.g., Are there any signs of fractures? What lobe is the opacity in?"
-                        className="w-full h-32 p-3 bg-white border border-slate-300 rounded-lg text-slate-900 placeholder-slate-400 focus:ring-2 focus:ring-brand-primary focus:border-brand-primary transition-shadow duration-200 disabled:bg-slate-100 disabled:cursor-not-allowed"
+                        className="w-full h-32 p-3 bg-slate-700 border border-slate-600 rounded-lg text-slate-100 placeholder-slate-400 focus:ring-2 focus:ring-brand-secondary focus:border-brand-secondary transition-shadow duration-200 disabled:bg-slate-600 disabled:cursor-not-allowed"
                         disabled={isLoading}
                     />
                 </div>

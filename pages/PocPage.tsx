@@ -45,8 +45,8 @@ export const TextAnalysisPage: React.FC = () => {
   return (
     <main className="flex-grow container mx-auto p-4 md:p-6 lg:p-8 animate-fade-in">
       <div className="text-center mb-8">
-          <h1 className="text-3xl md:text-4xl font-bold text-brand-dark">Radiology Report Analysis</h1>
-          <p className="mt-2 text-lg text-slate-600 max-w-2xl mx-auto">Input a clinical question or report details to get an AI-powered analysis.</p>
+          <h1 className="text-3xl md:text-4xl font-bold text-slate-100">Radiology Report Analysis</h1>
+          <p className="mt-2 text-lg text-slate-300 max-w-2xl mx-auto">Input a clinical question or report details to get an AI-powered analysis.</p>
       </div>
       <div className="flex flex-col lg:flex-row gap-8">
         <aside className="w-full lg:w-1/3 xl:w-1/4 animate-slide-in-up">
