@@ -1,0 +1,5 @@
+{
+  "name": "PocketDoc",
+  "description": "PocketDoc: An AI-powered web application featuring tools for analyzing radiology-related text queries and images, using a local Ollama instance for secure, private inference.",
+  "requestFramePermissions": []
+}
